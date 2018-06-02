@@ -20,6 +20,8 @@ public class AddAdvertisementActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_advertisment);
 
+
+
         FragmentManager fragmentManager4 = getFragmentManager();
         fragmentTransaction = fragmentManager4.beginTransaction();
         fragmentTransaction.replace(R.id.contianer_add_advertisment, new StepOneAddAdvertisement() , "StepOneAddAdavertisment");
