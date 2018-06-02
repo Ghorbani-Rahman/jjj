@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:theme="@style/ThemeDetailAdvertisement"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="UnusedAttribute">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </android.support.v4.view.ViewPager>
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:background="#3B4A4E"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="bottom"
+                    android:padding="10dip"
+                    app:centered="true"
+                    app:fillColor="#df0623"
+                    app:pageColor="#fff"
+                    app:snap="false" />
+            </RelativeLayout>
+
+            <android.support.design.widget.AppBarLayout
+                android:background="#A0333639"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:fitsSystemWindows="true">
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/back_detail"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/back_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp" />
+
+                    <TextView
+                        android:id="@+id/title_type_advertisement"
+                        android:layout_marginRight="10dp"
+                        android:textSize="15sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+            </android.support.design.widget.AppBarLayout>
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="24dp">
+
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/title_advertisement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:paddingRight="20dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                      />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/visit_social"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin">
+
+                <LinearLayout
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="#31B0D5"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingLeft="30dp"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="مشاهده شبکه اجتماعی"
+                        android:paddingRight="30dp"
+                        android:paddingTop="15dp"
+                        android:textStyle="bold"
+                        android:paddingBottom="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/info_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin">
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="اطلاعات تماس"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                    <TextView
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:padding="3dp"
+                        android:id="@+id/numberPhone1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:padding="3dp"
+                        android:id="@+id/numberPhone2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       />
+
+                    <TextView
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:padding="3dp"
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <TextView
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:padding="3dp"
+                        android:id="@+id/instagram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <TextView
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:padding="3dp"
+                        android:id="@+id/telegram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <TextView
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:padding="3dp"
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/descriptionSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin">
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="توضیحات"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin">
+
+                <LinearLayout
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="تماس با آگهی دهنده"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                    <EditText
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:scrollHorizontally="true"
+                        android:padding="10dp"
+                        android:background="@drawable/background_add_advertisement"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/name"
+                        android:hint="نام شما"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:scrollHorizontally="true"
+                        android:layout_marginTop="20dp"
+                        android:padding="10dp"
+                        android:background="@drawable/background_add_advertisement"
+                        android:id="@+id/email_contact"
+                        android:hint="ایمیل شما"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_marginTop="20dp"
+                        android:padding="15dp"
+                        android:background="@drawable/background_add_advertisement"
+                        android:inputType="textMultiLine"
+                        android:lines="30"
+                        android:layout_marginBottom="15dp"
+                        android:minLines="8"
+                        android:gravity="top|right"
+                        android:hint="متن پیام"
+                        android:id="@+id/message"
+                        android:maxLines="30"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:scrollbars="vertical" />
+
+                    <Button
+                        android:layout_marginBottom="50dp"
+                        android:textSize="17sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/background_remove_add_advertisement"
+                        android:text="ارسال پیام"
+                        android:id="@+id/btn_send_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/map_advertisement"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin">
+
+                <RelativeLayout
+                    android:id="@+id/mapSection"
+                    android:layoutDirection="ltr"
+                    android:layout_width="match_parent"
+                    android:layout_height="550dp">
+
+                     <fragment
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                 </fragment>
+
+                <Button
+                    android:onClick="onZoom"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/zoomin"
+                    android:text="+"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <Button
+                    android:background="@color/colorPrimary"
+                    android:textColor="@android:color/white"
+                    android:onClick="onZoom"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/zoomout"
+                    android:layout_below="@+id/zoomin"
+                    android:text="-"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_marginBottom="30dp"
+            android:id="@+id/social_floating_menu"
+            android:layout_gravity="left|bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:menu_animationDelayPerItem="55"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_buttonSpacing="0dp"
+            fab:menu_colorNormal="#FF4081"
+            fab:menu_colorPressed="#ed6b97"
+            fab:menu_colorRipple="#99d4d4d4"
+            fab:menu_fab_label="اشتراک گذاری"
+            fab:menu_fab_size="normal"
+            fab:menu_icon="@drawable/social_share"
+            fab:menu_labels_colorNormal="#333"
+            fab:menu_labels_colorPressed="#444"
+            fab:menu_labels_colorRipple="#66efecec"
+            fab:menu_labels_cornerRadius="3dp"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            fab:menu_labels_margin="0dp"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_padding="0dp"
+            fab:menu_labels_position="right"
+            fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_textColor="#f2f1f1"
+            fab:menu_labels_textSize="15sp"
+            fab:menu_openDirection="up"
+            fab:menu_shadowColor="#66aff198"
+            fab:menu_shadowRadius="0dp"
+            fab:menu_shadowXOffset="3dp"
+            fab:menu_shadowYOffset="4dp"
+            fab:menu_showShadow="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/floating_pinterest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_pinterest"
+                fab:fab_colorNormal="#d50000"
+                fab:fab_colorPressed="#b33333"
+                fab:fab_colorRipple="#af3131"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/floating_linked_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/social_link_in"
+                fab:fab_colorNormal="#007BB6"
+                fab:fab_colorPressed="#409fcc"
+                fab:fab_colorRipple="#409fcc"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                fab:fab_colorNormal="#1DA1F2"
+                fab:fab_colorPressed="#5da2cc"
+                fab:fab_colorRipple="#5da2cc"
+                android:id="@+id/floating_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/social_twitter"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                fab:fab_colorNormal="#102594"
+                fab:fab_colorPressed="#334ac6"
+                fab:fab_colorRipple="#3a4ba9"
+                android:id="@+id/floating_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/social_facebook"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                fab:fab_colorNormal="#d50000"
+                fab:fab_colorPressed="#b33333"
+                fab:fab_colorRipple="#af3131"
+                android:id="@+id/floating_google_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/social_google_plus"
+                fab:fab_size="mini"
+                />
+
+            <com.github.clans.fab.FloatingActionButton
+                fab:fab_colorNormal="#26C2FF"
+                fab:fab_colorPressed="#4eaedf"
+                fab:fab_colorRipple="#4eaedf"
+                android:id="@+id/floating_telegram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/social_telegram"
+                fab:fab_size="mini" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    <android.support.v7.widget.CardView
+          android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="32dp">
+
+          <RelativeLayout
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent">
+
+
+              <LinearLayout
+                  android:id="@+id/datial_advertisment"
+                  android:gravity="center_horizontal"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="28dp"
+                  android:minHeight="0dp"
+                  android:layout_marginBottom="0dp">
+
+                  <LinearLayout
+                      android:paddingTop="5dp"
+                      android:paddingBottom="5dp"
+                      android:background="@android:color/black"
+                      android:gravity="center"
+                      android:orientation="horizontal"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.2"
+                      android:layout_height="wrap_content">
+
+
+                      <ImageView
+                          android:paddingLeft="3dp"
+                          android:src="@drawable/ic_eye"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" />
+
+                      <TextView
+                          android:id="@+id/all_visits_count"
+                          android:textColor="@android:color/white"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" />
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:paddingTop="5dp"
+                      android:paddingBottom="5dp"
+                      android:background="@android:color/black"
+                      android:gravity="center"
+                      android:orientation="horizontal"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.2"
+                      android:layout_height="wrap_content">
+
+                      <ImageView
+                          android:src="@drawable/ic_person"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" />
+
+                      <TextView
+                          android:id="@+id/visited"
+                          android:textColor="@android:color/white"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" />
+
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:paddingTop="5dp"
+                      android:paddingBottom="5dp"
+                      android:background="@android:color/black"
+                      android:gravity="center"
+                      android:orientation="horizontal"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.2"
+                      android:layout_height="wrap_content">
+
+                      <RelativeLayout
+                          android:gravity="center"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+
+                          <TextView
+                              android:drawableLeft="@drawable/ic_access_time"
+                              android:id="@+id/duration"
+                              android:text=""
+                              android:textColor="@android:color/white"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginEnd="5dp"
+                              android:drawableStart="@drawable/ic_access_time"
+                              android:layout_marginRight="5dp" />
+
+                              <ProgressBar
+                                  android:layoutDirection="ltr"
+                                  android:visibility="gone"
+                                  style="@android:style/Widget.ProgressBar.Horizontal"
+                                  android:progressTint="@color/colorPrimary"
+                                  android:progress="0"
+                                  android:id="@+id/progressBarDuration"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content" />
+
+
+                      </RelativeLayout>
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:paddingTop="5dp"
+                      android:paddingBottom="5dp"
+                      android:background="@color/colorPrimary"
+                      android:gravity="center"
+                      android:orientation="horizontal"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.2"
+                      android:layout_height="wrap_content">
+
+                      <TextView
+                          android:id="@+id/remaning_visit"
+                          android:paddingLeft="3dp"
+                          android:textColor="@android:color/white"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" />
+
+                      <ImageView
+                          android:paddingLeft="3dp"
+                          android:src="@drawable/ic_eye"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" />
+
+                  </LinearLayout>
+
+
+
+              </LinearLayout>
+
+              <View
+                  android:layout_below="@+id/datial_advertisment"
+                  android:background="@color/colorPrimary"
+                  android:layout_width="match_parent"
+                  android:layout_height="4dp"
+                  />
+
+          </RelativeLayout>
+
+          </android.support.v7.widget.CardView>
+
+
+</android.support.design.widget.CoordinatorLayout>

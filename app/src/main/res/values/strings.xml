@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">متاکار</string>
+
+    <string name="action_settings">تنظیمات</string>
+
+
+    <string name="intro_skip">رد شدن</string>
+    <string name="intro_next">بعدی</string>
+
+    <string name="text_title_intro_1">عنوان معرفی متاکار 1</string>
+    <string name="text_body_intro_1">متن عنوان معرفی متاکار 1</string>
+
+    <string name="text_intro_2">عنوان معرفی متاکار 2</string>
+    <string name="text_body_intro_2">متن عنوان معرفی متاکار 2</string>
+
+    <string name="text_intro_3">عنوان معرفی متاکار 3</string>
+    <string name="text_body_intro_3">متن عنوان معرفی متاکار 3</string>
+
+    <string name="text_intro_4">عنوان معرفی متاکار 4</string>
+    <string name="text_body_intro_4">متن عنوان معرفی متاکار 4</string>
+
+    <string name="title_action_search">جستجو</string>
+    <string name="title_action_panel_user">پنل کاربری</string>
+    <string name="title_action_category">دسته بندی</string>
+    <string name="title_home">خانه</string>
+
+    <!-- Strings related to net -->
+    <string name="network_error">خطا در دریافت اطلاعات.</string>
+    <string name="network_not_available">دستگاه خود را به اینترنت متصل کنید</string>
+    <string name="empty_list_message_advertisements">در حال حاضر مورد بیشتری یافت نشد!</string>
+
+
+    //Register User
+    <string name="app_lan_persion">چجحخهعغ فقثصضپگکمنتالبیسشوئدذرزطظ </string>
+    <string name="firstname">نام (فارسی)</string>
+    <string name="lastName"> نام خانوادگی (فارسی)</string>
+    <string name="ValidatePassword">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+    <string name="passwordTitle">رمز عبور</string>
+    <string name="retrievePasswordTitle">تکرار رمز عبور</string>
+
+    <string name="search_hint">جستجو....</string>
+
+    <string name="typeSearch">انتخاب نوع جستجو </string>
+
+    <string-array name="typeSearch">
+        <item>همه آگهی ها</item>
+        <item>آگهی متنی</item>
+        <item>آگهی تیزر</item>
+        <item>آگهی بازدیدی</item>
+        <item>آگهی شبکه های اجتماعی</item>
+    </string-array>
+
+    <string name="uploadImages">انتخاب تصویر پروفایل</string>
+
+    <string-array name="uploadImages">
+        <item>انتخاب از گالری</item>
+        <item>انتخاب از دوربین</item>
+        <item>حذف تصویر</item>
+    </string-array>
+
+    <string name="Advertisments">آگهی ها</string>
+
+    <string-array name="Advertisments">
+        <item>افزودن آگهی</item>
+        <item>آگهی های من</item>
+    </string-array>
+
+    <string name="UserProfile">پروفایل</string>
+
+    <string-array name="UserProfile">
+        <item>مشاهده پروفایل</item>
+        <item>ویرایش پروفایل</item>
+        <item>زیر مجموعه ها</item>
+    </string-array>
+
+    <string name="UserٌWallet">کیف پول</string>
+
+    <string-array name="UserٌWallet">
+        <item>مشاهده کیف پول</item>
+        <item>برداشت از کیف پول</item>
+    </string-array>
+
+    <string name="UserTicket">تیکت</string>
+
+    <string-array name="UserTicket">
+        <item>افزودن تیکت</item>
+        <item>مشاهده تیکت ها</item>
+    </string-array>
+
+    <string name="digits">1234567890</string>
+    <string name="title_delete">حذف</string>
+    <string name="message_rule_confirmed">
+        کاربر عزیز خوش آمدید لطفا قوانین زیر را مطالعه کنید برای کسب درآمد یا درج آگهی در سایت حتما باید عضو این سایت باشید بعد از عضویت قمست راهنمایی را بخوانید درج کنندگان آگهی برای درج آگهی از طریق پنج نوع آگهی میتوانید خدمات و کالای شما را به اطلاع عموم برسانیم دقت کنید میزان ارزش هر آگهی و تعداد بازدید در موفق بودن آن بسیار موثر می باشد ارزش هر آگهی از 10 تومان شروع و تا هر مبلغی که شما بخواهید قابل تنظیم می باشد وقتی شما ارزش آگهی را انتخاب کردید باید تعداد بازدید را انتخاب کنید . ارزش کل سفارش شما نوشته می شود . و جمع مبلغ قابل پرداخت می شود . شما بعد از پرداخت مبلغ شما قابل بازگشت نیست .دقت کنید به دلیل واریز به حساب بانکی و عدم امکان برگشت پول وجود ندارد . پس با دقت و با محاسبه قبلی سفارش را کامل کنید دقت بفرمایید اطلاعات تماس و متنون و عکس یا تیزر مناسب و درست را در آگهی ثبت کنید . به متون و تیزر های خلاق قوانین جمهوری اسلامی ایران اجازه پخش داده نخواهد شد کسب کنندگان درآمد کاربر محترم برای کسب درآمد حتما باید عضو سایت باشید . بدیهی هست بدونه عضویت هر آگهی را ببینید هیچ مبلغی به حساب شما اضافه نخواهد شد بعد از عضویت اطلاعات خواسته شده به درستی وارد سایت شود . اطلاعات تماس و ایمیل و شماره کارت به صورت صحیح وارد شود تا مبلغ 10/000 تومان قابل برداشت و درخواست واریز نیست - این مبلغ قابل استفاده برای درج آگهی می باشد - برای درخواست واریز مبلغ به حساب شما حتما باید مبلغ کیف پول شما بالاتر از ده هزار تومان باشد و در ضرایب 10000 تومانی قابل واریز می باشد به هر دلیلی که شما از فعالیت در سایت منصرف شوید مبلغ زیر ده هزار تومان قابل برداشت نیست ولی بالاتر از این مبلغ از حساب شما کسر شده و به حساب بانکی شما واریز می شود درخواست واریز مبلغ در هر ساعتی از شبانه روز امکان دارد و در مدت 24 ساعت کاری آینده به حساب شما واریز خواهد شد در هر صورتی که در هر مرحله به مشکلی برخورد کردید تیکتی برای ما ارسال کنید شما با خواندن این متن تمامی موارد آن را قبول دارید و دکمه قبول را بزنید
+    </string>
+    <string name="title_show_rule">مشاهده قوانین</string>
+
+    <string name="full_screen">full screen mode</string>
+
+
+</resources>

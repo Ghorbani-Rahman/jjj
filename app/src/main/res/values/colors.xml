@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DC143C</color>
+    <color name="colorPrimaryDark">#AD102F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--   Color for Slides   -->
+
+    <color name="blue">#0099CC</color>
+    <color name="purple">#9933CC</color>
+    <color name="green">#669900</color>
+    <color name="orange">#FF8800</color>
+
+    <!--   text_color  -->
+    <color name="textColorApp">#FFFFFF</color>
+
+    <color name="tab_checked">#F3CD70</color>
+    <color name="tab_unchecked">#FFFFFF</color>
+
+    //set background color
+
+</resources>

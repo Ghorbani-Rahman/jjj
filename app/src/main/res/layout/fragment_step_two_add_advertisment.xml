@@ -1,0 +1,1789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/register_container"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:background="@drawable/register_background"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back_step_two_add_advertisement"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/back_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp" />
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="درج آگهی مرحله دوم"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="مرحله اول \n تعیین اطلاعات"
+                        android:paddingRight="20dp"
+                        android:textSize="14sp"
+                        android:paddingTop="15dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:paddingBottom="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:text="مرحله دوم \n تکمیل اطلاعات"
+                        android:paddingRight="20dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="مرحله سوم \n تعیین بوجه"
+                        android:paddingRight="20dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:drawableRight="@drawable/ic_star_black_24dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:text="شرح آگهی"
+                        android:textSize="14sp"
+                        android:paddingTop="15dp"
+                        android:textStyle="bold"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        />
+
+                    <EditText
+                        android:padding="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/background_add_advertisement"
+                        android:inputType="textMultiLine"
+                        android:lines="30"
+                        android:layout_marginBottom="15dp"
+                        android:minLines="8"
+                        android:gravity="top|right"
+                        android:hint="شرح آگهی..."
+                        android:id="@+id/title_add_advertisement"
+                        android:maxLines="30"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:scrollbars="vertical" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:paddingBottom="50dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:drawableRight="@drawable/ic_star_black_24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="دسته بندی"
+                    android:textSize="16sp"
+                    android:paddingTop="14dp"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+
+                    <LinearLayout
+                        android:id="@+id/one_category"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/category_subcategory_one"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="30dp"
+                            android:hint="دسته بندی  -  زیر دسته بندی"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:id="@+id/remove_one_category"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/two_category"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/category_subcategory_two"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="30dp"
+                            android:hint="دسته بندی  -  زیر دسته بندی"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:id="@+id/remove_two_category"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/three_category"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/category_subcategory_three"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="30dp"
+                            android:hint="دسته بندی  -  زیر دسته بندی"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:id="@+id/remove_three_category"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/four_category"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/category_subcategory_four"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="30dp"
+                            android:hint="ذسته بندی  -  زیر دسته بندی"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:id="@+id/remove_four_category"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/five_category"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/category_subcategory_five"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="30dp"
+                            android:hint="دسته بندی  -  زیر دسته بندی"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:id="@+id/remove_five_category"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:padding="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/background_add_advertisement"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                     <LinearLayout
+                         android:layout_marginBottom="15dp"
+                         android:orientation="horizontal"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="14sp"
+                            android:text="انتخاب دسته بندی"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <Spinner
+                            android:layout_marginRight="60dp"
+                            android:gravity="left"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:id="@+id/category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                     <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textStyle="bold"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="14sp"
+                            android:text="انتخاب زیر دسته"
+                            android:layout_marginLeft="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <Spinner
+                            android:gravity="left"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:layout_marginRight="40dp"
+                            android:id="@+id/sub_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:paddingBottom="50dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:drawableRight="@drawable/ic_star_black_24dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="انتخاب محدوده فعالیت"
+                        android:textSize="14sp"
+                        android:paddingTop="15dp"
+                        android:textStyle="bold"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        />
+
+                        <LinearLayout
+                            android:id="@+id/one"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/pro_city_one"
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:layout_marginRight="30dp"
+                                android:hint="استان  -  شهر"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                android:id="@+id/remove_one"
+                                android:layout_marginRight="15dp"
+                                android:src="@drawable/remove"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/two"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/pro_citiy_two"
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:layout_marginRight="30dp"
+                                android:hint="استان  -  شهر"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                android:id="@+id/remove_two"
+                                android:layout_marginRight="15dp"
+                                android:src="@drawable/remove"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/three"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:id="@+id/pro_citiy_three"
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:layout_marginRight="30dp"
+                                android:hint="استان  -  شهر"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                android:id="@+id/remove_three"
+                                android:layout_marginRight="15dp"
+                                android:src="@drawable/remove"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/four"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:id="@+id/pro_citiy_four"
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:layout_marginRight="30dp"
+                                android:hint="استان  -  شهر"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                android:id="@+id/remove_four"
+                                android:layout_marginRight="15dp"
+                                android:src="@drawable/remove"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/five"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:id="@+id/pro_citiy_five"
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:layout_marginRight="30dp"
+                                android:hint="استان  -  شهر"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                android:id="@+id/remove_five"
+                                android:layout_marginRight="15dp"
+                                android:src="@drawable/remove"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+
+                    <LinearLayout
+                        android:padding="2dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/background_add_advertisement"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:padding="15dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:paddingTop="10dp"
+                                android:textSize="14sp"
+                                android:text="انتخاب استان"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <Spinner
+                                android:id="@+id/provinces"
+                                android:layout_marginRight="60dp"
+                                android:gravity="left"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginEnd="10dp"
+                            android:padding="15dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textStyle="bold"
+                                android:paddingBottom="10dp"
+                                android:textSize="14sp"
+                                android:text="انتخاب شهر"
+                                android:layout_marginLeft="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <Spinner
+                                android:id="@+id/cities"
+                                android:gravity="left"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:layout_marginRight="40dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:drawableRight="@drawable/ic_star_black_24dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:text="شما پنج انتخاب دارید!"
+                        android:textSize="12sp"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:paddingBottom="50dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="اطلاعات تماس"
+                        android:textSize="16sp"
+                        android:paddingTop="15dp"
+                        android:textStyle="bold"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:drawableRight="@drawable/ic_star_black_24dp"
+                        android:layout_marginRight="10dp"
+                        android:text="شماره تلفن ، فکس ، ..."
+                        android:textSize="14sp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:padding="7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/background_remove_add_advertisement"
+                        android:src="@drawable/fab_add"
+                        android:id="@+id/btn_add_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:hint="شماره تلفن"
+                        android:padding="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:scrollHorizontally="true"
+                        android:layoutDirection="ltr"
+                        android:id="@+id/one_contact"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/background_add_advertisement"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                         android:gravity="center"
+                         android:id="@+id/two_contact_body"
+                         android:layout_marginLeft="15dp"
+                         android:layout_marginTop="15dp"
+                         android:padding="2dp"
+                         android:textStyle="bold"
+                         android:background="@drawable/background_add_advertisement"
+                         android:layout_marginRight="15dp"
+                         android:orientation="horizontal"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
+
+                         <ImageView
+                             android:layout_marginRight="15dp"
+                             android:id="@+id/remove_two_contact"
+                             android:background="@drawable/background_remove_add_advertisement"
+                             android:src="@drawable/remove"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content" />
+
+                         <EditText
+                             android:maxLines="1"
+                             android:inputType="number"
+                             android:scrollHorizontally="true"
+                             android:layoutDirection="ltr"
+                             android:backgroundTint="@android:color/transparent"
+                             android:id="@+id/two_contact"
+                             android:padding="5dp"
+                             android:textStyle="bold"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        android:id="@+id/three_contact_body"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/background_add_advertisement"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/remove_three_contact"
+                            android:background="@drawable/background_remove_add_advertisement"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:maxLines="1"
+                            android:inputType="number"
+                            android:scrollHorizontally="true"
+                            android:backgroundTint="@android:color/transparent"
+                            android:layoutDirection="ltr"
+                            android:id="@+id/three_contact"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        android:id="@+id/four_contact_body"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/background_add_advertisement"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/remove_four_contact"
+                            android:background="@drawable/background_remove_add_advertisement"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:maxLines="1"
+                            android:inputType="number"
+                            android:scrollHorizontally="true"
+                            android:backgroundTint="@android:color/transparent"
+                            android:layoutDirection="ltr"
+                            android:id="@+id/four_contact"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        android:id="@+id/five_contact_body"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/background_add_advertisement"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/remove_five_contact"
+                            android:background="@drawable/background_remove_add_advertisement"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:maxLines="1"
+                            android:inputType="number"
+                            android:scrollHorizontally="true"
+                            android:backgroundTint="@android:color/transparent"
+                            android:layoutDirection="ltr"
+                            android:id="@+id/five_contact"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:layout_marginTop="40dp"
+                        android:drawableRight="@drawable/ic_star_black_24dp"
+                        android:layout_marginRight="10dp"
+                        android:text="ایمیل"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/background_add_advertisement"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:hint="شناسه ایمیل"
+                            android:maxLines="1"
+                            android:inputType="text"
+                            android:scrollHorizontally="true"
+                            android:id="@+id/email_advertisement"
+                            android:backgroundTint="@android:color/transparent"
+                            android:layoutDirection="ltr"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.3"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:padding="10dp"
+                            android:background="#d2d1d1"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_email_add_advertisement"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_marginTop="40dp"
+                        android:text="انیستاگرام"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:padding="2dp"
+                            android:gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:textStyle="bold"
+                            android:background="@drawable/background_add_advertisement"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:hint="شناسه انیستاگرام"
+                                    android:maxLines="1"
+                                    android:inputType="text"
+                                    android:scrollHorizontally="true"
+                                    android:backgroundTint="@android:color/transparent"
+                                    android:layoutDirection="ltr"
+                                    android:padding="5dp"
+                                    android:textStyle="bold"
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="0.3"
+                                    android:layout_height="wrap_content"/>
+
+                                <ImageView
+                                    android:padding="10dp"
+                                    android:background="#d2d1d1"
+                                    android:layout_marginRight="15dp"
+                                    android:src="@drawable/at_sign"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="10dp"
+                        android:text="تله گرام"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/background_add_advertisement"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:hint="شناسه تله گرام"
+                            android:maxLines="1"
+                            android:inputType="text"
+                            android:scrollHorizontally="true"
+                            android:backgroundTint="@android:color/transparent"
+                            android:layoutDirection="ltr"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.3"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:padding="10dp"
+                            android:background="#d2d1d1"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/at_sign"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_marginTop="40dp"
+                        android:drawableRight="@drawable/ic_star_black_24dp"
+                        android:layout_marginRight="10dp"
+                        android:text="آدرس"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/background_add_advertisement"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:hint="آدرس..."
+                            android:maxLines="1"
+                            android:inputType="text"
+                            android:scrollHorizontally="true"
+                            android:id="@+id/address_advertisement"
+                            android:backgroundTint="@android:color/transparent"
+                            android:layoutDirection="ltr"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.3"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:padding="10dp"
+                            android:background="#d2d1d1"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_address"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:paddingBottom="50dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="افزودن تصاویر"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textSize="14sp"
+                        android:paddingTop="15dp"
+                        android:textStyle="bold"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                    <TextView
+                        android:drawableRight="@drawable/ic_star_black_24dp"
+                        android:layout_marginRight="10dp"
+                        android:text="حداکثر شش عکس میتوانید انتخاب کنید"
+                        android:textSize="12sp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <ImageView
+                        android:id="@+id/add_image_add_advertisement"
+                        android:padding="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="25dp"
+                        android:src="@drawable/add_a_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/category_one_image_body"
+                            android:layout_margin="15dp"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="170dp">
+
+                                <ImageView
+                                    android:id="@+id/remove_selected_photo_one"
+                                    android:background="@drawable/background_remove_photo"
+                                    android:src="@drawable/remove_photo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <RelativeLayout
+                                    android:id="@+id/select_photo_one"
+                                    android:background="@drawable/background_image_add_advertiseement"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_margin="2dp"
+                                        android:scaleType="fitXY"
+                                        android:id="@+id/photo_selesced_one_user"
+                                        android:visibility="gone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+
+                                    <TextView
+                                        android:id="@+id/placeholder_photo_one"
+                                        android:padding="5dp"
+                                        android:layout_marginTop="40dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:textStyle="bold"
+                                        android:textColor="@android:color/white"
+                                        android:background="#A0333639"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="انتخاب..."
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </RelativeLayout>
+
+                                <EditText
+                                    android:maxLines="1"
+                                    android:inputType="text"
+                                    android:scrollHorizontally="true"
+                                    android:padding="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/background_add_advertisement"
+                                    android:id="@+id/title_photo_one"
+                                    android:hint="عنوان"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginRight="20dp"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="170dp">
+
+                                <ImageView
+                                    android:id="@+id/remove_selected_photo_two"
+                                    android:background="@drawable/background_remove_photo"
+                                    android:src="@drawable/remove_photo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <RelativeLayout
+                                    android:id="@+id/select_photo_two"
+                                    android:background="@drawable/background_image_add_advertiseement"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:visibility="gone"
+                                        android:layout_margin="2dp"
+                                        android:scaleType="fitXY"
+                                        android:id="@+id/photo_selesced_two_user"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+
+                                    <TextView
+                                        android:id="@+id/placeholder_photo_two"
+                                        android:layout_marginLeft="2dp"
+                                        android:layout_marginRight="2dp"
+                                        android:padding="5dp"
+                                        android:layout_marginTop="40dp"
+                                        android:textColor="@android:color/white"
+                                        android:background="#A0333639"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:text="انتخاب..."
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+
+                                </RelativeLayout>
+
+                                <EditText
+                                    android:maxLines="1"
+                                    android:inputType="text"
+                                    android:scrollHorizontally="true"
+                                    android:padding="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/background_add_advertisement"
+                                    android:id="@+id/title_photo_two"
+                                    android:hint="عنوان"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/category_two_image_body"
+                            android:layout_margin="15dp"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="170dp">
+
+                                <ImageView
+                                    android:id="@+id/remove_selected_photo_three"
+                                    android:background="@drawable/background_remove_photo"
+                                    android:src="@drawable/remove_photo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <RelativeLayout
+                                    android:id="@+id/select_photo_three"
+                                    android:background="@drawable/background_image_add_advertiseement"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_margin="2dp"
+                                        android:scaleType="fitXY"
+                                        android:id="@+id/photo_selesced_three_user"
+                                        android:visibility="gone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+
+                                    <TextView
+                                        android:id="@+id/placeholder_photo_three"
+                                        android:padding="5dp"
+                                        android:layout_marginTop="40dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:textStyle="bold"
+                                        android:textColor="@android:color/white"
+                                        android:background="#A0333639"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="انتخاب..."
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </RelativeLayout>
+
+                                <EditText
+                                    android:maxLines="1"
+                                    android:inputType="text"
+                                    android:scrollHorizontally="true"
+                                    android:padding="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/background_add_advertisement"
+                                    android:id="@+id/title_photo_three"
+                                    android:hint="عنوان"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginRight="20dp"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="170dp">
+
+                                <ImageView
+                                    android:id="@+id/remove_selected_photo_four"
+                                    android:background="@drawable/background_remove_photo"
+                                    android:src="@drawable/remove_photo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <RelativeLayout
+                                    android:id="@+id/select_photo_four"
+                                    android:background="@drawable/background_image_add_advertiseement"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_margin="2dp"
+                                        android:scaleType="fitXY"
+                                        android:id="@+id/photo_selesced_four_user"
+                                        android:visibility="gone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+
+                                    <TextView
+                                        android:id="@+id/placeholder_photo_four"
+                                        android:layout_marginLeft="2dp"
+                                        android:layout_marginRight="2dp"
+                                        android:padding="5dp"
+                                        android:layout_marginTop="40dp"
+                                        android:textColor="@android:color/white"
+                                        android:background="#A0333639"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:text="انتخاب..."
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </RelativeLayout>
+
+                                <EditText
+                                    android:maxLines="1"
+                                    android:inputType="text"
+                                    android:scrollHorizontally="true"
+                                    android:padding="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/background_add_advertisement"
+                                    android:id="@+id/title_photo_four"
+                                    android:hint="عنوان"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/category_three_image_body"
+                            android:layout_margin="15dp"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="170dp">
+
+                                <ImageView
+                                    android:id="@+id/remove_selected_photo_five"
+                                    android:background="@drawable/background_remove_photo"
+                                    android:src="@drawable/remove_photo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <RelativeLayout
+                                    android:id="@+id/select_photo_five"
+                                    android:background="@drawable/background_image_add_advertiseement"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_margin="2dp"
+                                        android:scaleType="fitXY"
+                                        android:id="@+id/photo_selesced_five_user"
+                                        android:visibility="gone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+
+                                    <TextView
+                                        android:id="@+id/placeholder_photo_five"
+                                        android:padding="5dp"
+                                        android:layout_marginTop="40dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:textStyle="bold"
+                                        android:textColor="@android:color/white"
+                                        android:background="#A0333639"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="انتخاب..."
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </RelativeLayout>
+
+                                <EditText
+                                    android:maxLines="1"
+                                    android:inputType="text"
+                                    android:scrollHorizontally="true"
+                                    android:padding="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/background_add_advertisement"
+                                    android:id="@+id/title_photo_five"
+                                    android:hint="عنوان"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginRight="20dp"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="170dp">
+
+                                <ImageView
+                                    android:id="@+id/remove_selected_photo_six"
+                                    android:background="@drawable/background_remove_photo"
+                                    android:src="@drawable/remove_photo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <RelativeLayout
+                                    android:id="@+id/select_photo_six"
+                                    android:background="@drawable/background_image_add_advertiseement"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_margin="2dp"
+                                        android:scaleType="fitXY"
+                                        android:id="@+id/photo_selesced_six_user"
+                                        android:visibility="gone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+
+                                    <TextView
+                                        android:id="@+id/placeholder_photo_six"
+                                        android:layout_marginLeft="2dp"
+                                        android:layout_marginRight="2dp"
+                                        android:padding="5dp"
+                                        android:layout_marginTop="40dp"
+                                        android:textColor="@android:color/white"
+                                        android:background="#A0333639"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:text="انتخاب..."
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </RelativeLayout>
+
+                                <EditText
+                                    android:maxLines="1"
+                                    android:inputType="text"
+                                    android:scrollHorizontally="true"
+                                    android:padding="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/background_add_advertisement"
+                                    android:id="@+id/title_photo_six"
+                                    android:gravity="center"
+                                    android:hint="عنوان"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:paddingBottom="50dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:drawableRight="@drawable/ic_star_black_24dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="افزودن تصویر شاخص"
+                        android:textSize="14sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:paddingTop="15dp"
+                        android:textStyle="bold"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:id="@+id/add_index_photo_for_advertisement"
+                        android:padding="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_height="wrap_content"
+                        android:text="انتخاب"
+                        android:background="@drawable/background_remove_add_advertisement" />
+
+
+                    <ImageView
+                        android:id="@+id/photo_index_selected"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp" />
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/video_tizer_body"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:paddingBottom="50dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:drawableRight="@drawable/ic_star_black_24dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="افزودن ویدیو"
+                        android:textSize="14sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:paddingTop="15dp"
+                        android:textStyle="bold"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/add_video_for_advertisement"
+                        android:padding="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_height="wrap_content"
+                        android:text="انتخاب"
+                        android:background="@drawable/background_remove_add_advertisement" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:focusableInTouchMode="true"
+                        android:singleLine="true"
+                        android:scrollHorizontally="true"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="5dp"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:paddingRight="5dp"
+                        android:focusable="true"
+                        android:scrollbars="vertical"
+                        android:id="@+id/address_video_for_advertisement"
+                        android:padding="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_add_advertisement" />
+
+                    <!--<VideoView
+                        android:visibility="gone"
+                        android:paddingTop="10dp"
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/video_selected"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />-->
+
+                    <TextView
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        android:id="@+id/see_video_selected"
+                        android:text="مشاهده ویدیو"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:paddingBottom="50dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="افزودن نقشه"
+                        android:textSize="14sp"
+                        android:paddingTop="15dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textStyle="bold"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/add_map_for_advertisement"
+                        android:drawableRight="@drawable/fab_add"
+                        android:padding="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_height="wrap_content"
+                        android:text="افزودن"
+                        android:background="@drawable/background_remove_add_advertisement" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:background="@drawable/background_subset_user"
+                        android:padding="10dp"
+                        android:layout_margin="15dp"
+                        android:id="@+id/show_map_advertisement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:padding="12dp"
+                        android:id="@+id/step_prev"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/background_add_advertisement_cancle"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:text="  مرحله قبل  "
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/step_next_add"
+                        android:padding="12dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:background="@drawable/background_add_advertisement_cancle"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:text=" مرحله بعدی "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:background="#FFF"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.delaroystodios.metakar.fragment.SearchFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <SearchView
+                android:background="@android:color/white"
+                android:iconifiedByDefault="false"
+                android:searchIcon="@null"
+                android:queryBackground="@android:color/transparent"
+                android:gravity="right"
+                android:id="@+id/search_key"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:id="@+id/go_to_search"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/page_search"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/search_type"
+                    android:src="@drawable/filter_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   />
+
+                <TextView
+                    android:visibility="gone"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/type_search_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cardview_dark_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_advertisement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@android:color/darker_gray"
+            android:visibility="gone"
+            android:id="@+id/errorConnectToInternet"
+            android:text="@string/network_not_available"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/prgLazyLoadingAdvertisementsfooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20.0dip" />
+
+    </RelativeLayout>
+
+</LinearLayout>

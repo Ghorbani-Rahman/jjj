@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.delaroystodios.metakar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/WellcomeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		
+        <activity
+            android:name=".LoadingActivity"
+            android:theme="@style/WellcomeTheme" />
+
+        <activity android:name=".MainActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+        <activity
+            android:name=".Activities.AdvertisementDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/ThemeDetailAdvertisement">
+        </activity>
+
+
+        <activity android:name=".Activities.RegisterActivity"
+            android:theme="@style/ThemeDetailAdvertisement" />
+
+        <activity android:name=".User.LoginActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+        <activity android:name=".User.ForgatPasswordActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+        <activity android:name=".User.WithdrawsActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+        <activity android:name=".User.TicketActivity" />
+
+        <activity android:name=".Activities.ShowWalletActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+
+        <activity android:name=".User.EarningsActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+        <activity android:name=".Activities.NotificationsActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+        <activity android:name=".Activities.AddAdvertisementActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+        <activity android:name=".User.ShowProfileActivity"
+            android:theme="@style/ThemeDetailAdvertisement"
+            />
+
+        <activity android:name=".User.EditProfileActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+        <activity android:name=".Activities.ShowSubsetUserActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+        <activity android:name=".Activities.ReadNotificationsActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+
+        <activity android:name=".Activities.MapActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+
+        <activity android:name=".Activities.DashBoardActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+
+        <activity android:name=".Activities.MyAdvertisementActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+
+        <activity android:name=".Activities.ListEarnsActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+        <activity android:name=".Activities.AddTicketActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+        <activity android:name=".Activities.FullscreenVideoActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+        <activity android:name=".Activities.ShowGalleryMyAdvertisement"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+        <activity android:name=".Activities.ShowDetailMyAdvertisements"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+        <activity android:name=".Activities.ShowAddressMyAdvertisementActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+        <activity android:name=".Activities.EditInfoMyAdvertisementActivity"
+            android:theme="@style/ThemeDetailAdvertisement"/>
+
+
+
+
+    </application>
+
+</manifest>

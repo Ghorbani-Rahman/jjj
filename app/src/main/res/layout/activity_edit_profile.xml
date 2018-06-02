@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@android:color/darker_gray"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layoutDirection="rtl"
+        android:layout_height="match_parent"
+        tools:context="com.delaroystodios.metakar.User.EditProfileActivity">
+
+        <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+            <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/back_edit_profile"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/back_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp" />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="ویرایش پروفایل"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+            <ScrollView
+                 android:layout_width="match_parent"
+                android:layoutDirection="rtl"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.CardView
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:layout_marginTop="13dp"
+                                android:layout_marginBottom="13dp"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                                android:textColor="@color/colorPrimary"
+                                android:background="@drawable/background_advertisement"
+                                android:layout_marginRight="25dp"
+                                android:text="ثبت ویرایش"
+                                android:id="@+id/send_edit_profile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <Button
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:layout_marginTop="13dp"
+                                android:layout_marginBottom="13dp"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                                android:textColor="@color/colorPrimary"
+                                android:background="@drawable/background_advertisement"
+                                android:layout_marginRight="25dp"
+                                android:text="انصراف"
+                                android:id="@+id/no_edit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                       android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="15dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp">
+
+                            <TextView
+                                android:paddingRight="33dp"
+                                android:paddingLeft="33dp"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:textSize="13sp"
+                                android:text="نام"
+                                android:textColor="@color/colorPrimary"
+                                android:background="@drawable/background_advertisement"
+                                android:textStyle="bold"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                android:layout_marginLeft="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:digits="@string/app_lan_persion"
+                                android:maxLines="1"
+                                android:inputType="text"
+                                android:scrollHorizontally="true"
+                                android:textStyle="bold"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                android:textSize="13sp"
+                                android:id="@+id/name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                         android:layout_marginTop="3dp"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
+
+                         <LinearLayout
+                             android:padding="15dp"
+                             android:layout_marginRight="10dp"
+                             android:orientation="horizontal"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginEnd="10dp">
+
+                             <TextView
+                                 android:digits="@string/app_lan_persion"
+                                 android:paddingRight="8dp"
+                                 android:paddingLeft="8dp"
+                                 android:paddingTop="10dp"
+                                 android:paddingBottom="10dp"
+                                 android:textColor="@color/colorPrimary"
+                                 android:background="@drawable/background_advertisement"
+                                 android:textSize="13sp"
+                                 android:textStyle="bold"
+                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                 android:text="نام خانوادگی"
+                                 android:layout_marginLeft="30dp"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content" />
+
+                             <EditText
+                                 android:maxLines="1"
+                                 android:inputType="text"
+                                 android:scrollHorizontally="true"
+                                 android:textStyle="bold"
+                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                 android:textSize="13sp"
+                                 android:id="@+id/family"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:digits="@string/app_lan_persion"/>
+
+                     </LinearLayout>
+
+
+                 </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="15dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:paddingRight="27dp"
+                                android:paddingLeft="27dp"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:background="@drawable/background_advertisement"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                android:textSize="13sp"
+                                android:text="ایمیل"
+                                android:layout_marginLeft="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                android:textSize="13sp"
+                                android:focusableInTouchMode="true"
+                                android:singleLine="true"
+                                android:scrollHorizontally="true"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"
+                                android:paddingLeft="5dp"
+                                android:ellipsize="marquee"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:paddingRight="5dp"
+                                android:background="#EEEEEE"
+                                android:focusable="true"
+                                android:id="@+id/email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="15dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:paddingRight="16dp"
+                                android:paddingLeft="16dp"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:background="@drawable/background_advertisement"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                android:textSize="13sp"
+                                android:text="تلفن همراه"
+                                android:layout_marginLeft="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:inputType="number"
+                                android:digits="@string/digits"
+                                android:maxLines="1"
+                                android:scrollHorizontally="true"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:id="@+id/phone_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                         android:layout_marginTop="3dp"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
+
+                     <LinearLayout
+                         android:padding="15dp"
+                         android:orientation="horizontal"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
+
+                         <TextView
+                             android:textStyle="bold"
+                             android:paddingRight="28dp"
+                             android:paddingLeft="28dp"
+                             android:paddingTop="10dp"
+                             android:paddingBottom="10dp"
+                             android:textColor="@color/colorPrimary"
+                             android:background="@drawable/background_advertisement"
+                             android:textSize="13sp"
+                             android:text="استان"
+                             android:layout_marginLeft="30dp"
+                             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content" />
+
+                         <Spinner
+                             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                             android:textStyle="bold"
+                             android:textSize="13sp"
+                             android:id="@+id/provinces"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content" />
+
+                     </LinearLayout>
+                 </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="15dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textColor="@color/colorPrimary"
+                                android:background="@drawable/background_advertisement"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                android:textStyle="bold"
+                                android:paddingRight="33dp"
+                                android:paddingLeft="33dp"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:textSize="13sp"
+                                android:text="شهر"
+                                android:layout_marginLeft="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <Spinner
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:id="@+id/cities"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="15dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="30dp"
+                                android:textStyle="bold"
+                                android:paddingRight="11dp"
+                                android:paddingLeft="12dp"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                android:textColor="@color/colorPrimary"
+                                android:background="@drawable/background_advertisement"
+                                android:textSize="13sp"
+                                android:text="شماره کارت"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <EditText
+                                android:inputType="number"
+                                android:maxLength="16"
+                                android:digits="@string/digits"
+                                android:maxLines="1"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:id="@+id/cart_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/section_rules_confirmed"
+                        android:visibility="gone"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="15dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="30dp"
+                                android:textStyle="bold"
+                                android:paddingRight="23dp"
+                                android:paddingLeft="23dp"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:background="@drawable/background_advertisement"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="13sp"
+                                android:text="قوانین"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <CheckBox
+                                android:gravity="center"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_marginRight="70dp"
+                                android:text="@string/title_show_rule"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="50dp"
+                                android:id="@+id/show_rule"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:padding="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:layout_marginTop="13dp"
+                                android:layout_marginBottom="13dp"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                                android:textColor="@color/colorPrimary"
+                                android:background="@drawable/background_advertisement"
+                                android:layout_marginRight="25dp"
+                                android:text="ثبت ویرایش"
+                                android:id="@+id/send_edit_profile_footer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <Button
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:layout_marginTop="13dp"
+                                android:layout_marginBottom="13dp"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                                android:textColor="@color/colorPrimary"
+                                android:background="@drawable/background_advertisement"
+                                android:layout_marginRight="25dp"
+                                android:text="انصراف"
+                                android:id="@+id/no_edit_footer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+</LinearLayout>

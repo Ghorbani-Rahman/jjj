@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    android:background="@drawable/register_background"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back_two_register"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/back_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp" />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:gravity="center"
+                android:text="ثبت نام"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/appbar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_marginTop="30dp"
+            android:id="@+id/user_name"
+            android:focusable="true"
+            android:gravity="center"
+            android:hint="ایمیل"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_marginTop="30dp"
+            android:inputType="textPassword"
+            android:id="@+id/user_password"
+            android:focusable="true"
+            android:gravity="center"
+            android:hint="@string/passwordTitle"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="@string/ValidatePassword"/>
+
+        <EditText
+            android:layout_marginTop="30dp"
+            android:id="@+id/retrieve_user_password"
+            android:inputType="textPassword"
+            android:focusable="true"
+            android:gravity="center"
+            android:hint="@string/retrievePasswordTitle"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="@string/ValidatePassword"/>
+
+        <Button
+            android:text="تأیید ثبت نام"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:id="@+id/verify_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:padding="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="18sp"
+        android:id="@+id/error_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

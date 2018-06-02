@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/back_add_ticket"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/back_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp" />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="افزودن تیکت"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layoutDirection="rtl"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_marginTop="13dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="13dp"
+                        android:textSize="15sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/background_remove_add_advertisement"
+                        android:layout_marginRight="25dp"
+                        android:text="ثبت تیکت"
+                        android:id="@+id/send_add_ticket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginBottom="13dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:background="@drawable/background_advertisement"
+                        android:layout_marginRight="25dp"
+                        android:text="انصراف"
+                        android:id="@+id/no_ticket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="1dp"
+                    android:background="#d9d1d1" />
+
+            <TextView
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="15dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:padding="10dp"
+                    android:drawableRight="@drawable/ic_star_black_24dp"
+                    android:text="موضوع : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/background_add_advertisement"
+                    android:padding="10dp"
+                    android:hint="موضوع تیکت"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="1dp"
+                android:background="#d9d1d1" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginTop="25dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:padding="10dp"
+                            android:drawableRight="@drawable/ic_star_black_24dp"
+                            android:text="اولویت : "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <Spinner
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/priority"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </Spinner>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_marginTop="25dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:padding="10dp"
+                            android:drawableRight="@drawable/ic_star_black_24dp"
+                            android:text="بخش موبوطه : "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <Spinner
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/sectionDep"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </Spinner>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            <View
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="1dp"
+                android:background="#d9d1d1" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                        android:drawableRight="@drawable/ic_star_black_24dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:text="شرح : "
+                        android:textSize="15sp"
+                        android:paddingTop="15dp"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        />
+
+                <EditText
+                        android:padding="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/background_add_advertisement"
+                        android:inputType="textMultiLine"
+                        android:lines="30"
+                        android:layout_marginBottom="15dp"
+                        android:minLines="8"
+                        android:gravity="top|right"
+                        android:hint="شرح ..."
+                    android:maxLines="30"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:scrollbars="vertical" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="1dp"
+                android:background="#d9d1d1" />
+
+            <LinearLayout
+                android:paddingBottom="50dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                            android:drawableRight="@drawable/ic_star_black_24dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:text="تصویر"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textSize="14sp"
+                            android:paddingTop="15dp"
+                            android:textStyle="bold"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                <ImageView
+                    android:id="@+id/add_image_add_ticket"
+                    android:padding="10dp"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/add_a_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/section_for_image"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp">
+
+                    <ImageView
+                        android:id="@+id/remove_selected_photo"
+                        android:background="@drawable/background_remove_photo"
+                        android:src="@drawable/remove_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:background="@drawable/background_image_add_advertiseement"
+                        android:scaleType="fitXY"
+                        android:layout_weight="1"
+                        android:id="@+id/photo_selesced"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="1dp"
+                android:background="#d9d1d1" />
+
+            <LinearLayout
+                android:paddingBottom="40dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_marginTop="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="13dp"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/background_remove_add_advertisement"
+                    android:layout_marginRight="25dp"
+                    android:text="ثبت تیکت"
+                    android:id="@+id/send_add_ticket_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="13dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:background="@drawable/background_advertisement"
+                    android:layout_marginRight="25dp"
+                    android:text="انصراف"
+                    android:id="@+id/no_ticket_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:checked="true"
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_action_home"
+        android:title="@string/title_home"
+        app:showAsAction="collapseActionView|never"/>
+
+    <item
+        android:checked="false"
+        app:showAsAction="collapseActionView|never"
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/title_action_search" />
+
+    <item
+        android:checked="false"
+        app:showAsAction="collapseActionView|never"
+        android:id="@+id/navigation_category"
+        android:icon="@drawable/ic_action_category"
+        android:title="@string/title_action_category" />
+
+    <item
+        android:checked="false"
+        app:showAsAction="collapseActionView|never"
+        android:id="@+id/navigation_panel_user"
+        android:icon="@drawable/ic_action_user_account"
+        android:title="@string/title_action_panel_user" />
+
+</menu>
